@@ -26,7 +26,7 @@ print("\t\t!!!Stock Portfolio tracker!!!")
 
 #printing stocks avliable
 
-print("STOCKS AVALIABLE AER")
+print("STOCKS AVLIABLE AER")
 count=0
 for i in stock_prices:
     count+=1
@@ -69,6 +69,7 @@ else:
 file.close()
 
     
+
 
 
 
