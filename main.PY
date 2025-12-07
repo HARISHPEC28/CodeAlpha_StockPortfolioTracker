@@ -21,6 +21,8 @@ stock_prices = {
     
 }
 
+print("\t\t!!!Stock Portfolio tracker!!!")
+
 
 #printing stocks avliable
 
@@ -29,6 +31,9 @@ count=0
 for i in stock_prices:
     count+=1
     print(count," . ",i," : ",stock_prices[i] )
+
+
+print("!!!!!!!!!enter the stock name followed by quantity to buy!!!!!!!!!!!")
 
 #loop to buy multiple stocks at a time
 
@@ -39,7 +44,7 @@ while(choice=="Y"):
     stock=input("enter the stock name:")
     stock=stock.upper()
     if stock in stock_prices:
-        quantity=eval(input(f"enter the quanity to buy {stock} stock"))
+        quantity=eval(input(f"enter the quanity to buy {stock} stock :"))
         if type(quantity)==int:
             l=[stock,quantity,stock_prices[stock]*quantity]
             itrable.append(l)
@@ -58,11 +63,12 @@ else:
     itrable.append(["","","",total])
     fwriter.writerows(itrable)
    
-    print("your transation saved in a file")
+    print("\nyour transation saved in a file\n")
     print("!!!!!!!!!THANK YOU!!!!!!!!!")
     
 file.close()
 
     
+
 
 
